@@ -30,8 +30,20 @@ public class App {
             .start();
 
         App app = new App();
-
+        
+        while(false){
+            app.load();
+            app.load1();
+            app.load2();
+        }
+        
         while(true){
+            app.load();
+            app.load1();
+            app.load2();
+        }
+        
+        while(false){
             app.load();
             app.load1();
             app.load2();
