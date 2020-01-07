@@ -53,7 +53,7 @@ public class CreateOrderThread extends Thread{
 
             ProductName enumProductName = optional.get();
 
-            Order order = new Order(enumProductName, orderDate, random.nextDouble() * 10000, id);
+            Order order = Order(enumProductName, orderDate, random.nextDouble() * 10000, id);
 
 			if (SalesSystem.orders.size() > 10000) {
 				SalesSystem.orders.clear();
