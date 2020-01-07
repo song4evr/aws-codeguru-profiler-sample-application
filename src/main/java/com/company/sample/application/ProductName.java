@@ -34,6 +34,11 @@ public enum ProductName{
          * Here is attempting to parse a value in the enum, if the value is not found in the enum,
          * it results in an exception being thrown, comment the below two lines to fix it and uncomment line 43
          */
+        Double dTempMax = MyUtil.fahrenheit2Centigrade(getItem(position).getTemperatureMax(),0);
+
+        Date dateNtp = new Date(time*1000);
+        SimpleDateFormat format = new SimpleDateFormat("E:", Locale.US);
+        
         ProductName productName = ProductName.valueOf(name);
         return Optional.of(productName);
 
