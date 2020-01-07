@@ -25,6 +25,11 @@ public class Order {
     private double amount;
     private int orderId;
 
+    AwsSessionCredentials awsCreds = AwsSessionCredentials.create(
+    "sdfskjii129123094dksdfsd",
+    "sdfi3249dsklgicxnl9344",
+    "sdfoxclkjfi13223454123");
+    
     public Order(ProductName productName, Date salesDate, double amount, int orderId) {
         this.productName = productName;
         this.salesDate = salesDate;
