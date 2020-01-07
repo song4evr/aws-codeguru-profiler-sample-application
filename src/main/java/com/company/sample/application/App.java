@@ -61,7 +61,12 @@ public class App {
             computeLong();
         }
     }
-
+    
+    private void load4(){
+        for (int i =0; i< 1 << 20; ++i){
+            computeLong();
+        }
+    }
     private void computeShort(){
         long x = 0;
         for (int i =0; i< 1 << 15; ++i){
